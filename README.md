@@ -8,8 +8,6 @@
 ## Example
 ```
 from lib.zeropi import *
-#ser = mSerial();
-#print ser.serialPorts();
 if __name__ == '__main__':
 	bot = zeropi()
 	bot.start()
