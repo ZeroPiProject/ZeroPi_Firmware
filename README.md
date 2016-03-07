@@ -1,4 +1,4 @@
-# ZeroPi_Firmware
+# ZeroPi Firmware for RaspberryPi
 ## How To Use 
 * **git clone** https://github.com/zeropiproject/zeropi_firmware
 * Open firmware.ino By **Arduino IDE**，compile and upload to ZeroPi board ( [Setup Environment for ZeroPi](https://github.com/ZeroPiProject/ZeroPi_package) ).
