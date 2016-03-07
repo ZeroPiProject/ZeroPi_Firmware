@@ -21,23 +21,23 @@ if __name__ == '__main__':
 * **zeropi**()
 * **start**()
 
-## GPIO
+### GPIO
 * **digitalWrite** ( Pin, Level ) 
 * **pwmWrite** ( Pin, Pwm )  
 * **digitalRead** ( Pin, **def** onRead )
 * **analogRead** ( Pin, **def** onRead )
  
-## DC Motor
+### DC Motor
 * **motorRun** ( Device, Pwm ) 
  * Device : 0 = Slot1( 1A+,1A- ), 1 = Slot1( 1B+,1B- ), ... , 6 = Slot4( 4A+,4A- ), 7 = Slot4( 4B+,4B- )  
  * Pwm : -255 ~ 255
 
-## Servo Motor
+### Servo Motor
 * **servoRun** ( Pin, Angle)
  * Pin : 0 - 8 ( A0, A1, A2, A3, MO, MI, SCK, SDA, SCL )
  * Angle : 0 ~ 180
 
-## Stepper Motor
+### Stepper Motor
 * **stepperRun**( Device, Speed )
  * Device : 0 ~ 3 ( Slot1~4 )
  * Speed : 0 ~ 20000
