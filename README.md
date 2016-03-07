@@ -1,6 +1,6 @@
 # ZeroPi Firmware for RaspberryPi
 
-![image](https://github.com/ZeroPiProject/ZeroPi_Firmware/raw/master/assets/rpi1.jpg)
+![image](https://raw.githubusercontent.com/ZeroPiProject/ZeroPi_Firmware/master/Assets/rpi1.jpg)
 
 ## How To Use 
 * **git clone** https://github.com/zeropiproject/zeropi_firmware
@@ -8,7 +8,7 @@
 * Connect to RaspberrPi with Connection 
 * Copy the folder "Python" into Raspberry Pi, then enter the folder and **sudo python** digitalWrite.py
 
-![image](https://github.com/ZeroPiProject/ZeroPi_Firmware/raw/master/assets/rpi2.jpg)
+![image](https://raw.githubusercontent.com/ZeroPiProject/ZeroPi_Firmware/master/Assets/rpi2.jpg)
 
 ## Example
 ```
