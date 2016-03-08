@@ -151,7 +151,7 @@ void parseDigitalRead(char *cmd){
       level = digitalRead(pin);
     }
   }
-  String s = "M12 D";
+  String s = "R12 D";
   s+=pin;
   s+=" L";
   s+=level;
@@ -173,7 +173,7 @@ void parseAnalogRead(char *cmd){
       level = analogRead(amaps[pin]);
     }
   }
-  String s = "M13 A";
+  String s = "R13 A";
   s+=pin;
   s+=" L";
   s+=level;
