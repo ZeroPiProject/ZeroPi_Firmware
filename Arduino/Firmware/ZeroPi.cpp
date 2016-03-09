@@ -419,17 +419,20 @@ void ZeroPiStepper::disable(void)
 }
 void ZeroPiStepper::move(long steps,float speed)
 {
+  _isMovingFinish = false;
   setSpeed(speed);
   _targetPosition += steps;
   _mode = 2;
 }
 void ZeroPiStepper::moveTo(long position,float speed)
 {
+  _isMovingFinish = false;
   setSpeed(speed);
   _targetPosition = position;
   _mode = 2;
 }
 void ZeroPiStepper::moveSpeed(float speed){
+  _isMovingFinish = false;
   setSpeed(speed);
   _mode = 1;
 }
@@ -488,14 +491,14 @@ void ZeroPiStepper::run(){
         }else{
           delayMicroseconds(delayTime);
         }
-        _isMovingFinish = false;
       }else{
         if(!_isMovingFinish){
           _isMovingFinish = true;
-          String s = "R52 D";
-          s+=slot_num;
-          s+=" OK";
-          Serial.println(s);
+          String s = "\r\r\r\r\r\r\r\nR52 D";
+          s += slot_num;
+          s += " OK\n";
+          Serial.print(s);
+          SerialUSB.println(s);
         }
       }
     break;

@@ -8,6 +8,8 @@ void setup(){
   SerialUSB.begin(115200);
   Serial.begin(115200);
   //initTC3(); 
+  delay(1000);
+  Serial.println("start");
 }//end setup
 
 char buf[255];
@@ -151,13 +153,13 @@ void parseDigitalRead(char *cmd){
       level = digitalRead(pin);
     }
   }
-  String s = "R12 D";
+  String s = "\r\r\r\r\r\r\r\nR12 D";
   s+=pin;
   s+=" L";
   s+=level;
-  s+=" OK";
-  Serial.println(s);
-  SerialUSB.println(s);
+  s+=" OK\n";
+  Serial.print(s);
+  SerialUSB.print(s);
 }
 void parseAnalogRead(char *cmd){
   char * tmp;
@@ -173,13 +175,13 @@ void parseAnalogRead(char *cmd){
       level = analogRead(amaps[pin]);
     }
   }
-  String s = "R13 A";
+  String s = "\r\r\r\r\r\r\r\nR13 A";
   s+=pin;
   s+=" L";
   s+=level;
-  s+=" OK";
-  Serial.println(s);
-  SerialUSB.println(s);
+  s+=" OK\n";
+  Serial.print(s);
+  SerialUSB.print(s);
 }
 void parseDCMotorRun(char *cmd){
   char * tmp;
