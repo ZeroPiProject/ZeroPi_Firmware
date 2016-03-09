@@ -492,7 +492,7 @@ void ZeroPiStepper::run(){
       }else{
         if(!_isMovingFinish){
           _isMovingFinish = true;
-          String s = "M52 D";
+          String s = "R52 D";
           s+=slot_num;
           s+=" OK";
           Serial.println(s);
