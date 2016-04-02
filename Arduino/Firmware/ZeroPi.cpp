@@ -1,5 +1,5 @@
 #include "Arduino.h"
-#include "zeropi.h"
+#include "ZeroPi.h"
 
 const SLOT_t slots[NUM_SLOTS] =
 {

@@ -1,7 +1,7 @@
 #ifndef ZEROPI_H
 #define ZEROPI_H
 
-#include "arduino.h"
+#include "Arduino.h"
 
 #define FORCE_INLINE __INLINE
 
